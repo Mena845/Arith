@@ -35,4 +35,13 @@ public class ArithmeticController {
     ) {
         return arithmeticService.multiply(a, b);
     }
+
+    @GetMapping("/divide")
+    public int divide(
+            @RequestParam int a,
+            @RequestParam int b
+    ) {
+        return arithmeticService.divide(a, b);
+    }
 }
+
