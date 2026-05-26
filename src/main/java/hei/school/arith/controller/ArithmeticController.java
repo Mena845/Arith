@@ -27,4 +27,12 @@ public class ArithmeticController {
     ){
         return arithmeticService.substract(a,b);
     }
+
+    @GetMapping ("/multiply")
+    public int multiply(
+            @RequestParam int a,
+            @RequestParam int b
+    ) {
+        return arithmeticService.multiply(a, b);
+    }
 }
