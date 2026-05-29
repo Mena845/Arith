@@ -8,7 +8,7 @@
         <version>4.0.6</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>hei.School</groupId>
+    <groupId>hei.school</groupId>
     <artifactId>Arith</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>Arith</name>
