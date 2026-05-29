@@ -4,27 +4,27 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class ArithmeticService {
-    public int add(int a, int b) {
+    public long add(long a, long b) {
         if(a < 0 || b < 0) {
             throw new IllegalArgumentException("Negative numbers are not allowed for addition");
         }
         return a + b;
     }
 
-    public int substract(int a, int b) {
+    public long substract(long a, long b) {
         if(a < b) {
             throw new IllegalArgumentException("a must be greater than or equal to b");
         }
         return a - b;
     }
-    public int multiply(int a, int b) {
+    public long multiply(long a, long b) {
         if (a == 0 || b == 0) {
             throw new IllegalArgumentException("Negative numbers are not allowed");
         }
         return a * b;
     }
 
-    public int divide(int a, int b) {
+    public long divide(long a, long b) {
         if (b == 0) {
             throw new IllegalArgumentException("Cannot divide by zero");
         }

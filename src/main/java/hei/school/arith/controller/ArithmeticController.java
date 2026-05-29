@@ -13,33 +13,33 @@ public class ArithmeticController {
         this.arithmeticService = arithmeticService;
     }
     @GetMapping("/add")
-    public int add(
-            @RequestParam int a,
-            @RequestParam int b
+    public long add(
+            @RequestParam long a,
+            @RequestParam long b
     ) {
         return arithmeticService.add(a, b);
     }
 
     @GetMapping("/subtract")
-    public int subtract(
-            @RequestParam int a,
-            @RequestParam int b
+    public long subtract(
+            @RequestParam long a,
+            @RequestParam long b
     ){
         return arithmeticService.substract(a,b);
     }
 
     @GetMapping ("/multiply")
-    public int multiply(
-            @RequestParam int a,
-            @RequestParam int b
+    public long multiply(
+            @RequestParam long a,
+            @RequestParam long b
     ) {
         return arithmeticService.multiply(a, b);
     }
 
     @GetMapping("/divide")
-    public int divide(
-            @RequestParam int a,
-            @RequestParam int b
+    public long divide(
+            @RequestParam long a,
+            @RequestParam long b
     ) {
         return arithmeticService.divide(a, b);
     }
